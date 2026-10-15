@@ -6,34 +6,28 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "newArchEnabled": true,
-    "splash": {
-      "image": "./assets/splash-icon.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
     "ios": {
       "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
       },
-      "edgeToEdgeEnabled": true
+      "package": "com.xangreta.minhasfinancas"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
-      "expo-sqlite",
-      "expo-location",
-      [
-        "expo-image-picker",
-        {
-          "cameraPermission": "Permita o acesso à câmera para fotografar comprovantes."
-        }
-      ]
-    ]
+      "expo-sqlite"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "6c6b33ed-48a8-4a5e-9d57-1240ff51cea9"
+      }
+    }
   }
 }
